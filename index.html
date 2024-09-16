@@ -49,7 +49,8 @@
     <h3>10-¿Qué son los métodos / verbos de petición HTTP? Dar ejemplos. Bibliografía MDN</h3>
     <p>indican la acción que se desea realizar para un recurso determinado; ejemplo, POST: envía datos al servidor,
         PUT:reemplaza todas las representaciones actuales del recurso de destino con la carga útil de la petición. </p>
-    <h3>11-¿Qué son los códigos de estado de respuestas HTTP? Realizar una tabla con su clasificación. Bibliografía MDN</h3>
+    <h3>11-¿Qué son los códigos de estado de respuestas HTTP? Realizar una tabla con su clasificación. Bibliografía MDN
+    </h3>
     <p>Los códigos de estado de respuesta HTTP indican si se ha completado satisfactoriamente una solicitud HTTP
         específica. Las respuestas se agrupan en cinco clases:</p>
     <table>
@@ -75,7 +76,79 @@
         </tr>
     </table>
     <h3>FORMULARIO</h3>
-    <form></form>
+    <form action="/registro" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre y apellido">Nombre y apellido:</label>
+            <input type="text" id="nombre y apellido" name="nombre y apellido" required>
 
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="Fecha de nacimiento">fecha de nacimiento:</label>
+            <input type="date" id="fecha de nacimiento" name="fecha de nacimiento" required>
+
+            <label for="DNI">DNI:</label>
+            <input type="DNI" id="DNI" name="DNI" required>
+
+            <label for="Numero de telefono">Numero de telefono:</label>
+            <input type="Numero de telefono" id="Numero de telefono" name="Numero de telefono" required>
+
+            <label for="Usuario de X">Usuario de X:</label>
+            <input type="Text" id="Usuario de X" name="Usuario de X" required>
+
+            <label for="Usuario de Instagram">Usuario de Instagram:</label>
+            <input type="Text" id="Usuario de Instagram" name="Usuario de Instagram" required>
+        </fieldset>
+
+        <fieldset>
+            <label for="Provincia">Provincia:</label>
+            <select id="Provincia" name="Provincia" required>
+                <option value="">Selecciona una opción</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Catamarca">Catamarca</option>
+                <option value="Chaco">Chaco</option>
+                <option value="Chubut">Chubut</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Corrientes">Corrientes</option>
+                <option value="Entre Ríos">Entre Ríos</option>
+                <option value="Formosa">Formosa</option>
+                <option value="Jujuy">Jujuy</option>
+                <option value="La Pampa">La Pampa</option>
+                <option value="La Rioja">La Rioja</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Misiones">Misiones</option>
+                <option value="Neuquén">Neuquén</option>
+                <option value="Río Negro">Río Negro</option>
+                <option value="Salta">Salta</option>
+                <option value="San Juan">San Juan</option>
+                <option value="San Luis">San Luis</option>
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="Santiago del Estero">Santiago del Estero</option>
+                <option value="Tierra del Fuego">Tierra del Fuego</option>
+                <option value="Tucumán">Tucumán</option>
+
+            </select>
+            <label for="Ciudad">Ciudad:</label>
+            <input type="Text" id="Ciudad" name="Ciudad" required>
+        </fieldset>
+        <fieldset>
+
+            <label for="PreferenciasEnLineasDeCosmeticos">Preferencias en lineas de cosmeticos:</label>
+            <input type="checkbox" id="cosmeticos1" name="cosmeticos" value="Rare Beauty"> <label for="cosmeticos1">Rare
+                Beauty</label>
+            <input type="checkbox" id="cosmeticos2" name="cosmeticos" value="Chanel"> <label
+                for="cosmeticos2">Chanel</label>
+            <input type="checkbox" id="cosmeticos3" name="cosmeticos" value="Maybelline"> <label
+                for="cosmeticos3">Maybelline</label>
+            <input type="checkbox" id="cosmeticos4" name="cosmeticos" value="L'Oreal "> <label for="cosmeticos4">L'Oreal
+            </label>
+            <input type="checkbox" id="cosmeticos5" name="cosmeticos" value="MAC"> <label for="cosmeticos5">MAC</label>
+
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
 </body>
 </html>
